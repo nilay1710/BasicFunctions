@@ -41,12 +41,7 @@ def drawLine(img,x,y,slope,b,g,r,thickness):
         
     cv2.line(img, (points[0][0], points[0][1]), (points[1][0], points[1][1]), (b, g, r), thickness)
         
-    
-        
-    
-
-
-# In[106]:
+  
 
 
 img_arr = cv2.imread('smiley.png', 1)
@@ -128,45 +123,12 @@ def cropLine(img,x0,y0,x1,y1,x2,y2):
             if (p1*p0 < 0):
                 img[i,j] = [0,0,0]
         
-        
-        
-    
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[248]:
 
 
 img_arr = cv2.imread('smiley.png', 1)
 cropImage(img_arr, [10,10],[270,100],[150,100],[10,200])
 cv2.imwrite('color_img2.jpg', img_arr)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
 
 
